@@ -1,0 +1,375 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+.page1{
+    padding: 1em 5em;
+    background-image: url("futuristic-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    height: 110vh;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-left{
+    display: flex;
+    color:white;
+    align-items: center;
+}
+.nav-list{
+    display: flex;
+    padding-left: 8em;
+}
+.nav-list li {
+    list-style: none;
+    font-size: larger;
+    padding-right: 2em;
+}
+a {
+    color:white;
+    text-decoration: none;
+}
+a:hover{
+    color:blue;
+}
+.navbtn{
+    padding:.75em 2em;
+    font-size: larger;
+    color:white;
+}
+.navbtn:hover{
+    cursor: pointer;
+}
+.navbtn2{
+   background-color: #FF5F1F; 
+}
+.navbtn1{
+    background-color: transparent;
+}
+.page1container{
+    display: grid;
+    grid-template-areas: "page1contentleft page2contentright";
+    padding-top: 9em;
+}
+.page1contentleft{
+    grid-area: "page1contentleft";
+}
+.page1contentright{
+    grid-area: "page1contentright";
+    position: relative;
+}
+.page1header{
+    font-size: 2em;
+}
+.page1para{
+    padding:2em 0em;
+    font-weight: bolder;
+    font-size: larger;
+    color:rgba(255,255,225,0.80);
+}
+.page1btns{
+    padding-bottom: 5em;
+}
+
+.page1btn1 , .page1btn2{
+    padding:.75em 2em;
+    font-size: larger;
+    color:white;
+    margin-right: 2em;
+}
+.page1btn1{
+    background-color: #FF5F15;
+}
+.page1btn2{
+    background-color: transparent;
+    border: 2px solid rgba(255,255,225,0.80);
+}
+
+.playButton{
+    position:absolute;
+    transform: translate(130%,220%);
+}
+.page1bottom{
+    display:flex;
+    bottom: 0;
+    font-size: 2em;
+    position: absolute;
+}
+.page1bottompara{
+    padding:0em .25em;
+}
+.dash {
+    position:absolute;
+    top:20px;
+    left:-35px;
+}
+.page1rightarrow{
+    position: absolute;
+    right: -80px;
+    bottom:10px;
+}
+.page2{
+    height: 150vh;
+    padding: 1em 5em;
+    display: grid;
+    grid-template-areas: "top"
+                         "bottom";
+}
+.page2topgrid{
+    grid-area: top;
+}
+.page2bottomgrid{
+    grid-area: bottom;
+    display: grid;
+    grid-template-areas: "img  matter";
+    padding-top: 5em;
+}
+
+.page2img1 , .page2img2 , .page2img3 , .page2img4{
+    height: 300px;
+    width: 320px;
+}
+.page2boxes{
+    display:grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+}
+.page2h2{
+    font-size:3em;
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 1.5em;
+}
+
+.box1 , .box2 , .box3 , .box4 {
+    position:relative;
+}
+.page2imgtop{
+    position:absolute;
+    width: 320px;
+    top:205px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2em 0em;
+    backdrop-filter: blur(50px);
+    color:white;
+}
+.imgtopbtn {
+    padding:1em;  
+    margin-right: 1em;
+    color:white;
+    background-color: #FF5F1F;
+    border:none;
+}
+.page2imgtopmatter p {
+    font-weight: lighter;
+    color: rgba(255,255,225,0.50);
+}
+.page2bottomleftgrid{
+    grid-area: img;
+}
+.page2bottomrightgrid{
+    grid-area: matter;
+}
+.page2bottomleftgrid img{
+    width: 520px;
+    height: 350px;
+}
+.page2bottomheader{
+    font-size:2.3em;
+    padding-top: .5em;
+}
+.page2bottompara{
+    padding: 1em 0em;
+    color:rgba(0,0,0,0.50);
+}
+.page2bottombtn {
+    padding: 1em;
+}
+.page2bottombtn1 {
+    margin-right: 2em;
+    background-color: #FF5F1F;
+    border:1px solid #FF5F15;
+    color:white;
+}
+.page2bottombtn2 {
+    border:1px solid #FF5F15;
+    color:#FF5F15;
+    background-color: white;
+}
+.page3{
+    height: 140vh;
+    padding:3em 5em;
+}
+.page3column1{
+    display:flex;
+    padding-top: 5em;
+    padding-bottom: 2em;
+    align-items: center;
+    justify-content: space-between;
+}
+.navigationcontainer{
+    display:flex;
+    padding: 0em 5em;
+    justify-content: center;
+    align-items: center;
+}
+.page3navbox1 {
+    height: 50px;
+    width: 50px;
+    background-color: rgba(225,95,31,.40);
+    margin-right: 2em;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.page3navbox2 {
+    height: 50px;
+    width: 50px;
+    background-color: #FF5F1F;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.page3matter{
+    font-size: 2em;
+}
+.page3grid{
+    display: grid;
+    grid-template-areas: "page3grid1 page3grid2"
+                         "page3grid3 page3grid4";
+    gap:5em;
+    padding-bottom: 3em;
+}
+.page3grid1{
+    grid-area: page3grid1;
+}
+.page3grid2{
+    grid-area: page3grid2;
+}
+.page3grid3{
+    grid-area: page3grid3;
+}
+.page3grid4{
+    grid-area: page3grid4;
+}
+.page3grid1 , .page3grid2 , .page3grid3 , .page3grid4 {
+    display:flex;
+}
+
+.page3img img{
+    height: 250px;
+    width: 250px;
+}
+.page3content{
+    padding-left: 1.5em;
+}
+.page3h3{
+    font-size: 2em;
+}
+.page3category{
+    padding:1.5em 0em;
+    color:#FF5F15
+}
+.page3paras{
+    padding-bottom: 1.5em;
+    color: rgba(0,0,0,0.50);
+}
+.page3btn {
+    padding: 1em 1em;
+    background-color: #FF5F15;
+    border:none;
+    color:white;
+}
+.page4{
+    padding: 2em 5em;
+    height:150vh;
+    background-color: black;
+    color:white;
+}
+.page4column1 h2{
+    font-size: 4em;
+    text-align: center;
+}
+.box4grid{
+    display:grid;
+    grid-template-areas: "box4gridleft box4gridright";
+    position: relative;
+    padding-top: 2em;
+}
+.box4gridleft{
+    grid-area: box4gridleft;
+}
+.box4gridright{
+    grid-area: box4gridright;
+    position: relative;;
+}
+.box4img1{
+      height: 500px;
+      width:425px;
+}
+.box4img2{
+    height: 500px;
+    width:350px;
+    margin-right: 4em;
+    display: absolute;
+}
+.box4img3{
+    height: 300px;
+    width:300px;
+}
+.box4font{
+    position:absolute;
+    left:500px;
+    top:200px;
+}
+.box4gridright p {
+    padding: 2em 0em;
+    font-size: 1.5em;
+    color: rgba(225,225,225,0.50);
+}
+.page5{
+    height: 80vh;
+    background-image: url("Rectangle 606.png");
+    background-size:contain;
+    background-repeat: no-repeat;
+    color:white;
+   text-align: center;
+}
+.page5h2{
+    font-size:3em;
+    padding-top: 2.5em;
+}
+.page5btn{
+    padding:1em 2em;
+    background-color: #FF5F15;
+    color:white;
+    border:none;
+}
+.page5para{
+    padding: 2.5em 0em;
+}
+.footerlist{
+    display:flex;
+    justify-content: space-around;
+}
+footer{
+    background-color: black;
+    color:rgba(255,255,225,0.50)
+}
+.footerlist li{
+    list-style: none;
+    padding: 1em;
+}
+.top{
+    color:white;
+}
+button:hover{
+    cursor: pointer;
+}
